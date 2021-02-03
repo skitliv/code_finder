@@ -2,6 +2,7 @@
 
 var search = $("#searchBtn");
 $('#waiting img').hide();
+
 search.click(function(event) {
   if (document.getElementById("searchInput").value != "" ) {
 
@@ -47,6 +48,7 @@ $.ajax({
 });
 event.preventDefault();
 }// close if searchInput
+event.preventDefault();
 });
 
 

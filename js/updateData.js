@@ -63,6 +63,8 @@ function upDater(event) {
 				data: {
 			  codeUpdated: texto,
 				 identificacion : hiddenId,
+				 exilio:'si',
+				 type:'update',
 			   table:tableNamer },
 				success:function(data){
 					$('#resultAjax').html(data);///shows the result of the request
@@ -81,9 +83,6 @@ function upDater(event) {
 			.always(function() {
 				console.log("complete");
 			});
-
-   	
-
    }
    });
 	} // end of else 

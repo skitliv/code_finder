@@ -10,7 +10,7 @@ include "php/header.php";
     </header>
 
     <div id="resultAjax">
-      
+      por que no se recarganans
     </div>
     <div id="container">
       <nav class="navbar  navbar-dark">
@@ -19,7 +19,6 @@ include "php/header.php";
     <input class="form-control mr-sm-2 " type="text" placeholder="Search" id="searchInput" value="all">
 
     <select id="inputState" class="form-control" name="dataTablahtml">
-        
         <option value ="javascript">Js</option>
         <option value ="d3js">D3</option>
         <option value ="sass">sass</option>
@@ -31,9 +30,8 @@ include "php/header.php";
         <option value="Bootstrap">Bootstrap</option>
         <option value ="ShortCuts">ShortCuts</option>
         <option value ="phyton">phyton</option>
-        
         <option value ="npm">npm</option>
-        
+
       </select>
 
     <button class="btn btn-success" type="submit" id="searchBtn">Search</button> 
@@ -46,7 +44,9 @@ include "php/header.php";
 </nav>
 <div id="searchResult">
 	<div id="waiting">
+    
    <img src="imagenes/eye.gif" alt=""> 
+ pero no hace nada
   </div>
 </div>
   <div id="insertBox">

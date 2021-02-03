@@ -33,6 +33,24 @@ body{
 /*weit*/
 /*buttons*/
 
+#searchResult .dataContainer{
+border: 1px solid  #F2F2F2;
+margin-bottom: 15px;
+border-radius: 15px;
+position: relative;
+overflow: hidden;
+
+}
+
+#searchResult .dataContainer .tools{
+background-color: #000;
+position: absolute;
+right: 1px;
+bottom: 0;
+width: 20px;
+height: 20px;
+}
+
 .spanDiv span{
   padding: 0.618rem 1.618rem;
   cursor: pointer;
