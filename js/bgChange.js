@@ -12,7 +12,7 @@ let urls = {
 };
 let stateValue = urls.javascript;
 
-bgChange.addEventListener("change", (event)=>{
+bgChange.addEventListener("change", (event)=>{	
 let e = event.target ;
 console.log(urls);
 let ext = '.jpg';

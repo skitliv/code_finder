@@ -6,7 +6,6 @@ function deleterFunction(event) {
     let texto = fight.parentNode.parentNode.querySelector('TEXTAREA').value;
     let hiddenId = fight.parentNode.parentNode.querySelector('.hiddenId').value;
     let tableNamer = document.querySelector('#inputState').value;
-    alert(hiddenId);
     $.ajax({
         url: 'php/deleter.php',
         type: 'POST',

@@ -10,7 +10,7 @@ include "php/header.php";
     </header>
 
     <div id="resultAjax">
-      por que no se recarganans
+    
     </div>
     <div id="container">
       <nav class="navbar  navbar-dark">
@@ -19,18 +19,20 @@ include "php/header.php";
     <input class="form-control mr-sm-2 " type="text" placeholder="Search" id="searchInput" value="all">
 
     <select id="inputState" class="form-control" name="dataTablahtml">
-        <option value ="javascript">Js</option>
-        <option value ="d3js">D3</option>
-        <option value ="sass">sass</option>
-        <option value="php">php</option>
-        <option value ="git">git</option>
-        <option value ="css">css</option>
-        <option value ="command">command</option>
-        <option value="mysql">mysql</option>
-        <option value="Bootstrap">Bootstrap</option>
-        <option value ="ShortCuts">ShortCuts</option>
-        <option value ="phyton">phyton</option>
-        <option value ="npm">npm</option>
+    <?php
+    $output = '';
+include 'php/conn.php';
+
+        $sql = "  SELECT * FROM lenguajes ORDER BY idlenguaje DESC ";
+        $result = mysqli_query($mysqli,$sql);
+        $queryResult = mysqli_num_rows($result);
+        if ($queryResult > 0) {
+          while ($row = mysqli_fetch_assoc($result)) {
+            $output .= "<option value ='".$row['nombre']."'>". $row['nombre']   ."</option>"  ;
+          } /// and whilw
+        echo $output;
+        } /// end if
+    ?>
 
       </select>
 
@@ -46,7 +48,7 @@ include "php/header.php";
 	<div id="waiting">
     
    <img src="imagenes/eye.gif" alt=""> 
- pero no hace nada
+ 
   </div>
 </div>
   <div id="insertBox">

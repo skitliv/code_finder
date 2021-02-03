@@ -10,10 +10,10 @@ $Etiquetas = mysqli_real_escape_string($mysqli,$_POST['Etiquetas']);
 $Code = mysqli_real_escape_string($mysqli,$_POST['Code']);
 $Description =  mysqli_real_escape_string($mysqli,$_POST['Description']);
 $link =  mysqli_real_escape_string($mysqli,$_POST['link']);
-
+$idLenguaje = mysqli_real_escape_string($mysqli,$_POST['idLenguaje']);
 	
-	$misqldata = " INSERT INTO $dataTablahtml (`String1`, `String2`,`String3` , `string4` ) VALUES
-	 ('$Etiquetas','$Code','$Description', '$link');";
+	$misqldata = " INSERT INTO usercodes (`tags`, `code`,`description`  ) VALUES
+	 ('$Etiquetas','$Code','$Description');";
 	mysqli_query($mysqli, $misqldata);
 
 } else{
