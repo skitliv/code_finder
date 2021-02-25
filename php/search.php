@@ -21,7 +21,7 @@ if (isset($_POST['searchJs'])) {
 	}
 //// if all else
 
-$result = mysqli_query($mysqli,$sql);
+$result = mysqli_query($conn,$sql);
 
 $queryResult = mysqli_num_rows($result);
 		$formS = "<form  id ='Form_editTextArea'>";
