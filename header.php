@@ -7,9 +7,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>PHP Project 01</title>
+    <title>Cf</title>
     <!--I won't do more than barebone HTML, since this isn't an HTML tutorial.-->
+    <script src="cf/js/jquery/jquery.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cf/bootstrap4.3.1/css/bootstrap.css">
+    <script src="cf/bootstrap4.3.1/js/bootstrap.js"></script>
+
+ 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
   <?php 
@@ -28,12 +33,12 @@
           <li><a href="blog.php">Find Blogs</a></li>
           <?php
             if (isset($_SESSION["useruid"])) {
-              echo "<li><a href='profile.php'>Profile Page</a></li>";
+              echo "<li><a href='profile.php'>Code Finder</a></li>";
               echo "<li><a href='logout.php'>Logout</a></li>";
             }
             else {
               echo "<li><a href='signup.php'>Sign up</a></li>";
-              echo "<li><a href='login.php'>Log in</a></li>";
+              echo "<li><a href='index.php'>Log in</a></li>";
             }
           ?>
         </ul>

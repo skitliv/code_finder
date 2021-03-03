@@ -72,7 +72,7 @@ insertbtn.addEventListener("click", function (event) {
 	} else {
 		
 $.ajax({  
-                     url:"php/insert.php",  
+                     url:"cf/php/insert.php",  
                      method:"POST",  
                      data:$('#form3, #form2').serialize() ,   
                      success:function(data){  

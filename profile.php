@@ -22,12 +22,12 @@
        $output = '';
        include 'cf/php/conn.php';
 
-        $sql = "  SELECT * FROM lenguajes ORDER BY idlenguaje DESC ";
+        $sql = "  SELECT * FROM lenguajes ORDER BY Idlenguaje asc ";
         $result = mysqli_query($conn,$sql);
         $queryResult = mysqli_num_rows($result);
         if ($queryResult > 0) {
           while ($row = mysqli_fetch_assoc($result)) {
-            $output .= "<option value ='".$row['nombre']."'>". $row['nombre']   ."</option>"  ;
+            $output .= "<option value ='".$row['Idlenguaje']."'>". $row['nombre']   ."</option>"  ;
           } /// and whilw
         echo $output;
         } /// end if

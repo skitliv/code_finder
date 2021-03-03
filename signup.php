@@ -11,7 +11,7 @@
       <input type="text" name="uid" placeholder="Username...">
       <input type="password" name="pwd" placeholder="Password...">
       <input type="password" name="pwdrepeat" placeholder="Repeat password...">
-      <button type="submit" name="submit">Sign up</button>
+      <button type="submit" name="submit" class = "btn btn-dark">Sign up</button>
     </form>
   </div>
   <?php

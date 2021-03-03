@@ -1,29 +1,27 @@
-<!--Splitting the header and footer into separate documents makes things easier!-->
 <?php
   include_once 'header.php';
 ?>
 
-<section class="index-intro">
-  <h1>This Is An Introduction</h1>
-  <p>Here is an important paragraph that explains the purpose of the website and why you are here!</p>
-</section>
-
-<section class="index-categories">
-  <h2>Some Basic Categories</h2>
-  <div class="index-categories-list">
-    <div>
-      <h3>Fun Stuff</h3>
-    </div>
-    <div>
-      <h3>Serious Stuff</h3>
-    </div>
-    <div>
-      <h3>Exciting Stuff</h3>
-    </div>
-    <div>
-      <h3>Boring Stuff</h3>
-    </div>
+<section class="signup-form">
+  <h2>Log In</h2>
+  <div class="signup-form-form">
+    <form action="includes/login.inc.php" method="post">
+      <input type="text" name="uid" placeholder="Username/Email...">
+      <input type="password" name="pwd" placeholder="Password...">
+      <button type="submit" name="submit" class="btn btn-dark">Log in</button>
+    </form>
   </div>
+  <?php
+    // Error messages
+    if (isset($_GET["error"])) {
+      if ($_GET["error"] == "emptyinput") {
+        echo "<p>Fill in all fields!</p>";
+      }
+      else if ($_GET["error"] == "wronglogin") {
+        echo "<p>Wrong login!</p>";
+      }
+    }
+  ?>
 </section>
 
 <?php
