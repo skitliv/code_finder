@@ -1,3 +1,4 @@
+
 jQuery(document).ready(function() {
 	// $('#search-text').keyup(function() {
  //        $('.ajaxProgress').show();
@@ -40,8 +41,10 @@ var begin = " <form id = 'form3'> <br> <div class=''>  <input type='text' placeh
 var textAreaCode =" <textarea type='text' placeholder='code' class='' name='Code' id='code666' rows='7'> </textarea>" ;
 var textAreaDescription = "<textarea type='text' placeholder='Description' class='' name='Description' rows='7' cols='50'> </textarea>";
 var links = "<textarea type='text' placeholder='links' class='' name='link' rows='2' cols='50'> </textarea>";
+    
 var end = "<button  id='insertbtn'> Insert</button> </div> </form>";
-var todo = begin+ textAreaCode+textAreaDescription+ links + end;
+let imagenInsert = "<div id = 'imgResult'> </div> ";
+var todo = begin+ textAreaCode+textAreaDescription+ links + imagenInsert + end;
 $('#insertBox').html(todo);
  	let e = event;
 
@@ -76,6 +79,7 @@ $.ajax({
                      method:"POST",  
                      data:$('#form3, #form2').serialize() ,   
                      success:function(data){  
+						$("#result").html(data);
                           $('#form3').trigger("reset");                            
                      }  
                 });

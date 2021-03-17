@@ -35,7 +35,7 @@ function satelite2(event) {
       
 	}
 
-console.log('por fin ');
+// console.log('por fin ');
 } // end of function
 
 
@@ -60,10 +60,10 @@ let timerAnimation = setInterval( ()=>{
 		if (s >= arrayText.length) {
 				s =  0 ;
 			}
-		console.log(stop);	
+		// console.log(stop);	
 
 	if (stop == arrayText.length) {
-		console.log("stoped");
+		// console.log("stoped");
 		clearInterval(timerAnimation);
 	}	
 	 }, 3000);

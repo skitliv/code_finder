@@ -28,7 +28,6 @@ $.ajax({
    let textarea = document.querySelectorAll('textarea');
     
     	document.querySelectorAll('textarea').forEach(function  (item) {
-    		console.log(item.scrollHeight);
     		item.style.height = (item.scrollHeight + 5) + "px";
 
     	});   	
