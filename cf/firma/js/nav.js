@@ -10,6 +10,7 @@ let	 arrayText = [
 ,["El creyente es feliz","El que duda es sabio."]
 ,["Los monstruos más temibles","son los que se esconden","en nuestras almas."]
 ,["Edgar Allan Poe" ]];
+
 function myLogoCreation() {
 let myLogoCon = document.createElement("DIV");
 myLogoCon.setAttribute("id", "myLogoContainer");
