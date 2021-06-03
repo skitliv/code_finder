@@ -2,8 +2,8 @@
       include 'header.php';
    if($_SESSION["userid"]){
       
-      echo $_SESSION["userid"];
-      echo 'Hello '. $_SESSION["useruid"];
+      // echo $_SESSION["userid"];
+      // echo 'Hello '. $_SESSION["useruid"];
    ////////////////////////code <<<<<<<<<<<<<<<<<<<<<   
 
     ?>

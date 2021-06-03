@@ -2,7 +2,10 @@
   session_start();
   include_once 'includes/functions.inc.php';
 ?>
+<?php 
+include "cf/php/header.php";
 
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -16,38 +19,84 @@
 
  
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/">
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="cf/csss/logincircle.css">
 
-  <?php 
-     include "cf/php/header.php";
-  ?>
+  
   </head>
   <body>
 
-    <!--A quick navigation-->
-    <nav>
-      <div class="wrapper">
-        <a href="index.php"><img src="img/logo-white.png" alt="Blogs logo"></a>
-        <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="discover.php">About Us</a></li>
-          <li><a href="blog.php">Find Blogs</a></li>
-          <?php
+ <nav id="nav_top_menu" class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="index.php">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+          
+            <?php
             if (isset($_SESSION["useruid"])) {
-              echo "<li><a href='profile.php'>Code Finder</a></li>";
-              echo "<li><a href='logout.php'>Logout</a></li>";
+              echo "
+              <li class='nav-item active'>
+                    <li><a class='nav-link' href='profile.php'>Code Finder  <span class='sr-only'>(current)</span></a>
+              </li> ";
+
+
+              echo "<li class='nav-item active'>
+                      <li><a class='nav-link' href='logout.php'>Log out  <span class='sr-only'>(current)</span></a>
+                     </li>";
             }
             else {
-              echo "<li><a href='signup.php'>Sign up</a></li>";
-              echo "<li><a href='index.php'>Log in</a></li>";
+              echo "
+              <li class='nav-item active'>
+                    <li><a class='nav-link' href='signup.php'>Sing up  <span class='sr-only'>(current)</span></a>
+              </li> ";
+
+
+              echo "<li class='nav-item active'>
+                      <li><a class='nav-link' href='index.php'>Log in  <span class='sr-only'>(current)</span></a>
+                     </li>";  
+
+  
             }
           ?>
-        </ul>
-      </div>
-    </nav>
+            
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+
+    <!--A quick navigation-->
+   
+
+
+
+
+    
 
 <!--A quick wrapper to align the content (ends in footer.php)-->
 <div class="wrapper">

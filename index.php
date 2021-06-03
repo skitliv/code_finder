@@ -3,7 +3,7 @@
 
 
   if(isset($_SESSION["userid"])) {
-    echo 'looks like its working'; 
+ 
 
   } else{
  ?>
