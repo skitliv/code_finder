@@ -1,10 +1,11 @@
- <?php 
+<?php 
+session_start();
+ $iDuser =  $_SESSION["userid"];
+include 'conn.php';
 
+$iDuser =  mysqli_real_escape_string($conn,$_SESSION["userid"]);
 if (isset($_POST['Code'])) {
 
-	session_start();
-	$iDuser = $_SESSION["userid"];
-include "conn.php";
 
 $dataTablahtml = mysqli_real_escape_string($conn,$_POST['dataTablahtml']);
 $Etiquetas = mysqli_real_escape_string($conn,$_POST['Etiquetas']);
@@ -16,7 +17,6 @@ $misqldata = "
  INSERT INTO usercodes (`iDuser`, `iDlenguaje`,`code` , `description`, `tags` ) VALUES
 	 ($iDuser, $dataTablahtml ,'$Code','$Description' ,'$Etiquetas');	 	 
 	 ";
-
 	 mysqli_query($conn, $misqldata);
 	 $lastOne = mysqli_insert_id($conn);
 	 
@@ -30,10 +30,7 @@ $lastOne = mysqli_insert_id($conn);
 } else{
 	header("Location: ../index.php");
 	exit();
-
 }
-
-
 
 
  ?>

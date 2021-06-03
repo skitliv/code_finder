@@ -16,7 +16,11 @@
 
  
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/">
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="cf/csss/logincircle.css">
+
   <?php 
      include "cf/php/header.php";
   ?>

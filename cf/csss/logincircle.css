@@ -1,0 +1,57 @@
+#conLogin{
+	width: 300px;
+	height:  300px;
+	margin: 0 auto;
+	border-radius: 100%;
+	border: 3px solid #000;
+	color: #fff;
+	padding: 10px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+ 	text-align: center;
+	position: relative;
+	top: 100px;
+	animation-name: moon;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	background-image: url('../imagenes/CaBRITA.png');
+	background-position: center;
+	background-size: contain;
+	 }
+ #login_form{
+ 	opacity: 0;
+ 	transition: 333ms;
+ }
+ #conLogin:hover #login_form{
+ 	transition: 333ms;
+ 	opacity: 1;
+ }
+
+ #ingresar{
+ 	display: block;
+ 	margin: auto;
+ 	 }
+#login_form h1{
+	color: #E8095C;
+}
+#logout{
+	position: absolute;
+	right: 3px;
+	top: 3px;
+} 	 
+#conLogin form input , #conLogin form button {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 3px solid #000 ;
+	background-color: #343a40;
+}
+
+@keyframes moon {
+	0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.1);   }
+	50%{ box-shadow: 0px 0px 5px 9px rgba(189, 10, 174, 0.36);  }
+	100% {  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.1);}
+}
+
+

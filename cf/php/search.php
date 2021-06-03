@@ -1,7 +1,6 @@
 <?php 
 session_start();
  $iDuser =  $_SESSION["userid"];
-
 include 'conn.php';
    
  ?>
@@ -110,7 +109,6 @@ $queryResult = mysqli_num_rows($result);
 else{
 	header('Location: ../index.php');
 }
-
+// phpinfo();
      ?>
-    
 </div>

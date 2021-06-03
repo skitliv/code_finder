@@ -43,7 +43,7 @@ var textAreaDescription = "<textarea type='text' placeholder='Description' class
 var links = "<textarea type='text' placeholder='links' class='' name='link' rows='2' cols='50'> </textarea>";
     
 var end = "<button  id='insertbtn'> Insert</button> </div> </form>";
-let imagenInsert = "<div id = 'imgResult'> </div> ";
+let imagenInsert = "<div id = 'imgResult'> </div> <div id='result'> </div>";
 var todo = begin+ textAreaCode+textAreaDescription+ links + imagenInsert + end;
 $('#insertBox').html(todo);
  	let e = event;
@@ -79,8 +79,9 @@ $.ajax({
                      method:"POST",  
                      data:$('#form3, #form2').serialize() ,   
                      success:function(data){  
+						
 						$("#result").html(data);
-                          $('#form3').trigger("reset");                            
+                        //   $('#form3').trigger("reset");                            
                      }  
                 });
      	

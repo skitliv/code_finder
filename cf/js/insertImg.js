@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
     
     
     let textAreaCode =' '+
-      '<form  id="form_drinks">'+
+      '<form  id="form" >'+
   
       
        '<div class="col-lg-6 col-sm-6 col-12 ">'+

@@ -3,8 +3,8 @@
 @import "mainNav.css";
 
 body{
-	background-image: url(../imagenes/logo.png);
-	background-color: #343a40;
+
+	/* background-color: #000; */
     background-position: 50% -20%; 
     background-repeat: no-repeat;
     color: #fff;
