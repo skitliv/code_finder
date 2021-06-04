@@ -65,8 +65,8 @@ background-color: #000;
 	top: -10px;
 	left:25px;
 	background-image: url(../imagenes/eye.gif);
-background-position: center; 
-background-size: cover;
+    background-position: center; 
+    background-size: cover;
 
 }
 #satelite1{

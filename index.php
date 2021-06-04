@@ -7,7 +7,7 @@
 
   } else{
  ?>
-
+<section class="seclogin">
 <div id="conLogin">
 
 <form action="includes/login.inc.php" method="post">
@@ -19,7 +19,7 @@
 </form>
 
 </div>
-
+</section>
  <?php
   }
 ?>

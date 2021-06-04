@@ -8,10 +8,6 @@ include "php/header.php";
     </nav>
 
     </header>
-
-    <div id="resultAjax">
-      
-    </div>
     <div id="container">
       <nav class="navbar  navbar-dark">
 
@@ -44,6 +40,9 @@ include "php/header.php";
   </form>
 
 </nav>
+
+
+
 <div id="searchResult">
 	<div id="waiting">
    <img src="imagenes/eye.gif" alt=""> 
