@@ -43,8 +43,9 @@
 #conLogin form input , #conLogin form button {
     margin-top: 10px;
     border-radius: 10px;
-    border: 3px solid #000 ;
-	background-color: #343a40;
+    border: 2px solid #000 ;
+	background-color: #0f1113a2;
+	padding: 7px;
 }
 
 @keyframes moon {
@@ -58,6 +59,8 @@
 	margin: 0 auto;
 	position: relative;
 	top: 100px;
-	background-color: red;
-	border: 3px solid red;
+
+}
+.seclogin form input {
+	color: #fff;
 }

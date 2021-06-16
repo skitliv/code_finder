@@ -25,6 +25,11 @@ include "cf/php/header.php";
   
   </head>
   <body>
+<?php 
+
+  if (isset($_SESSION["useruid"])) {
+
+?>
 
  <nav id="nav_top_menu" class="navbar navbar-expand-lg navbar-dark bg-dark">
 
@@ -88,15 +93,12 @@ include "cf/php/header.php";
         </div>
       </nav>
 
-
+<?php
+  }
+  // end if isset for the nav 
+?>
 
     <!--A quick navigation-->
-   
-
-
-
-
     
-
 <!--A quick wrapper to align the content (ends in footer.php)-->
 <div class="wrapper">
