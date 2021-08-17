@@ -57,7 +57,7 @@ function upDater(event) {
 
    		$('#resultAjax').html(''); // limplia cualquier codigo
 			$.ajax({
-				url: 'php/sendUpdate.php',
+				url: 'cf/php/sendUpdate.php',
 				type: 'POST',
 				dataType: 'text',
 				data: {
@@ -65,6 +65,7 @@ function upDater(event) {
 				 identificacion : hiddenId,
 			   table:tableNamer },
 				success:function(data){
+					console.log(tableNamer);
 					$('#resultAjax').html(data);///shows the result of the request
 					// $('.ajaxProgress').hide();// hides the progresspp
 				}

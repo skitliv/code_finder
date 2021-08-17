@@ -17,7 +17,7 @@ include "cf/php/header.php";
     <link rel="stylesheet" href="cf/bootstrap4.3.1/css/bootstrap.css">
     <script src="cf/bootstrap4.3.1/js/bootstrap.js"></script>
 
- 
+    <link rel="shortcut icon" type="image/x-icon" href="../code_finder/cf/imagenes/favicon_io/favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="cf/csss/logincircle.css">
@@ -46,13 +46,11 @@ include "cf/php/header.php";
             if (isset($_SESSION["useruid"])) {
               echo "
               <li class='nav-item active'>
-                    <li><a class='nav-link' href='profile.php'>Code Finder  <span class='sr-only'>(current)</span></a>
+                    <li><a class='nav-link' href='Cfinder.php'>Code Finder  <span class='sr-only'>(current)</span></a>
               </li> ";
 
 
-              echo "<li class='nav-item active'>
-                      <li><a class='nav-link' href='logout.php'>Log out  <span class='sr-only'>(current)</span></a>
-                     </li>";
+         
             }
             else {
               echo "
@@ -87,8 +85,19 @@ include "cf/php/header.php";
             </li> -->
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            
+            
+            <?php
+            if (isset($_SESSION["useruid"])) {
+              echo "<li class='nav-item active'>
+              <li><a class='nav-link' href='logout.php'>Log out  <span class='sr-only'>(current)</span></a>
+             </li>";
+            }
+                ?>
+          
+
           </form>
         </div>
       </nav>

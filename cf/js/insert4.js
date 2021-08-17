@@ -81,7 +81,7 @@ $.ajax({
                      success:function(data){  
 						
 						$("#result").html(data);
-                        //   $('#form3').trigger("reset");                            
+                           $('#form3').trigger("reset");                            
                      }  
                 });
      	

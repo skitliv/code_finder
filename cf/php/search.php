@@ -60,7 +60,7 @@ $queryResult = mysqli_num_rows($result);
 		if ($queryResult > 0) {
 	while ($row = mysqli_fetch_assoc($result)) {
 
-			$h3 =  "<h3>" .  $row['tags'] . "</h3>";
+			$h3 =  "<h3 id = 'h3con'>" .  $row['tags'] . "</h3>";
 		$textarea1 =  "<div><textarea readonly ondblclick='upDater(event)' class = 'areaCode'>" .  $row['code'] ." </textarea> <input type = 'hidden' class = 'hiddenId' value = '".$row['iDuserCodes']."'> </div> ";
 		$String3 = "<div> <pre><code>". "<textarea id = 'areaDes'> " . $row['description'] . "</textarea>  </code></pre></div>";
 
